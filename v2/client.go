@@ -892,3 +892,7 @@ func (c *Client) NewRemoveLiquidityService() *RemoveLiquidityService {
 func (c *Client) NewQueryClaimedRewardHistoryService() *QueryClaimedRewardHistoryService {
 	return &QueryClaimedRewardHistoryService{c: c}
 }
+
+func (c *Client) NewUniversalTransferService() *UniversalTransferService {
+	return &UniversalTransferService{c: c}
+}
