@@ -896,3 +896,7 @@ func (c *Client) NewQueryClaimedRewardHistoryService() *QueryClaimedRewardHistor
 func (c *Client) NewUniversalTransferService() *UniversalTransferService {
 	return &UniversalTransferService{c: c}
 }
+
+func (c *Client) NewSubAccountFutureAssetsService() *SubAccountFutureAssetsService {
+	return &SubAccountFutureAssetsService{c: c}
+}
